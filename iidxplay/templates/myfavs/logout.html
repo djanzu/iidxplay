@@ -1,36 +1,9 @@
 {% load static %}
-<!DOCTYPE html>
-<html lang="en"><head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>CHITAGAKU | BACKEND SYSTEM </title>
-
-    <!-- Bootstrap -->
-    <link href="{% static "bootstrap.css" %}" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="{% static "font-awesome.css" %}" rel="stylesheet">
-    <!-- NProgress -->
-    <link href="{% static "nprogress.css" %}" rel="stylesheet">
-    <!-- Animate.css -->
-    <link href="{% static "animate.css" %}" rel="stylesheet">
-
-    <!-- Custom Theme Style -->
-    <link href="{% static "custom.css" %}" rel="stylesheet">
-  </head>
-
-  <body class="login">
-    <div>
-      <a class="hiddenanchor" id="signup"></a>
-      <a class="hiddenanchor" id="signin"></a>
-
+{% extends "myfavs/base.html" %}
       <div class="login_wrapper">
         <div class="animate form login_form">
           <section class="login_content">
-            <div>ログアウトしました。<br><a href="/backsystem/login/?next=/backsystem/">ログイン</a></div>
+            <div>ログアウトしました。<br><a href="/myfavs/login/">ログイン</a></div>
           </section>
         </div>
 
@@ -39,6 +12,3 @@
           </section>
         </div>
       </div>
-    </div>
-</body>
-</html>
